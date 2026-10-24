@@ -4,3 +4,24 @@
 * {
   font-family: "Sora", sans-serif;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+@keyframes soft-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-soft-bounce {
+  animation: soft-bounce 1.2s ease-in-out infinite;
+}
